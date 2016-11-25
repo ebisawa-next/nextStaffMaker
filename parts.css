@@ -1,0 +1,479 @@
+
+.colorList{
+	width:auto;
+	padding: 10px 0px 10px 25px;
+	height:50px;
+	background:#fff;
+	border-bottom: 2px solid #ccc;
+}
+
+.partsList{
+	width:auto;
+	height:370px;
+	padding: 10px 0px 0px 10px;
+	overflow-y:scroll;
+	scrollbar-base-color: #FC0;
+　　scrollbar-arrow-color: #fff;
+}
+
+
+/*--------------------------------------
+
+髪の毛　- hair -
+
+---------------------------------------*/
+
+.hairColor button {
+  width: 40px;
+  height:40px;
+  border-radius:20px;
+  margin-top:5px;
+  margin-right:10px;
+  display: inline-block
+}
+
+/*
+.hairColor button:hover{
+	cursor:pointer;
+	width:50px;
+	height:50px;
+	border-radius:25px;
+	transition: 0.1s;
+}
+*/
+
+.hairBk{
+	background:#333;
+}
+
+.hairRd{
+  background:#680202;
+}
+
+.hairRb{
+	background:#54271c;
+}
+
+.hairYl{
+	background:#4f3317;
+}
+.hairGl{
+	background:#f7b733;
+}
+.hairWh{
+	background:#fffcd6;
+}
+.hairGr{
+	background:#867c76;
+}
+
+
+/*--------------------------------------
+
+髪の毛　- bhair -
+
+---------------------------------------*/
+
+.bhairColor button {
+  width: 50px;
+  height:50px;
+  border-radius:25px;
+  display: inline-block
+}
+
+.bhairColor button:hover{
+	cursor:pointer;
+}
+
+.bhairBk{
+	background:#333;
+}
+
+.bhairRd{
+  background:#680202;
+}
+
+.bhairRb{
+	background:#54271c;
+}
+
+.bhairYl{
+	background:#4f3317;
+}
+.bhairGl{
+	background:#f7b733;
+}
+.bhairWh{
+	background:#fffcd6;
+}
+.bhairGr{
+	background:#867c76;
+}
+
+
+
+
+/*--------------------------------------
+
+目　- eye -
+
+---------------------------------------*/
+
+.eyeColor button {
+  width: 50px;
+  height:50px;
+  border-radius:25px;
+  display: inline-block;
+}
+
+.eyeColor button:hover{
+	cursor:pointer;
+}
+
+.eyeNear{
+	background:#aaa;
+}
+
+.eyeNormal{
+  background:#ccc;
+}
+
+.eyeDistant{
+	background:#eee;
+}
+
+
+
+/*--------------------------------------
+
+顔　- faceLine -
+
+---------------------------------------*/
+
+.faceColor button {
+  width: 50px;
+  height:50px;
+  border-radius:25px;
+  display: inline-block
+}
+
+.faceColor button:hover{
+	cursor:pointer;
+}
+
+.face{
+	background:#333;
+}
+
+.faceSk01{
+  background:#fce6d2;
+}
+
+.faceSk02{
+	background:#ffd8ae;
+}
+
+.faceSk03{
+	background:#efb899;
+}
+
+.faceSk04{
+	background:#d8996f;
+}
+
+
+/*--------------------------------------
+
+服　- cloth -
+
+---------------------------------------*/
+/* タブっぽく並べて */
+#clothTab ul {
+	overflow:visible;
+	height:auto;
+	list-style:none;
+	border-bottom:none;
+	height:60px;
+	float:left;
+	margin-top:0px;
+	margin-left:-5px;
+}
+#clothTab li {
+	display: inline-block;
+	width:50px;
+	height:50px;
+	padding:5px;
+	background:none;
+	margin-top:0px;
+}
+
+
+/* 最初はパネルは非表示 */
+
+#clothTab button{
+	width:40px;
+	height:40px;
+	margin-top:0px;
+}
+
+
+#clothTab button:hover{
+	margin-top:-10px;
+	width:50px;
+	height:50px;
+	transition: 0.1s ;
+	cursor: pointer;
+}
+
+#clothTab .active {
+	margin-top:-10px;
+	width:50px;
+	height:50px;
+	cursor: pointer;
+}
+
+#clothTab .cTops{
+	background: url(images/icon_tops.png);
+	background-size: contain;
+}
+
+#clothTab .cShoes{
+	background: url(images/icon_shoes.png);
+	background-size: contain;
+}
+
+#clothTab .cBottoms{
+	background: url(images/icon_bottoms.png);
+	background-size: contain;
+}
+
+#clothTab .cSocks{
+	background: url(images/icon_sox.png);
+	background-size: contain;
+}
+
+#clothTab .cOnepieces{
+	background: url(images/icon_onepiece.png);
+	background-size: contain;
+}
+
+
+
+
+
+/* タブっぽく並べて */
+.sizeCategory ul {
+	overflow:visible;
+	height:auto;
+	list-style:none;
+	border-bottom:none;
+	height:60px;
+	margin-top:-5px;
+}
+.sizeCategory li {
+	display: inline-block;
+	width:50px;
+	height:50px;
+	padding:5px;
+	background:none;
+	margin-top:0px;
+}
+
+
+
+.sizeCategory .sizeM{
+	background: url(images/icon_medium.png);
+	background-size: contain;
+}
+
+.sizeCategory .sizeL{
+	background: url(images/icon_large.png);
+	background-size: contain;
+}
+
+.sizeCategory button{
+	width:50px;
+	height:50px;
+}
+
+
+.sizeCategory button:hover{
+	margin-top:0px;
+	width:50px;
+	height:50px;
+	cursor: pointer;
+}
+
+.sizeCategory .active {
+	margin-top:0px;
+	width:50px;
+	height:50px;
+	cursor: pointer;
+}
+
+
+
+
+/*----------------------
+
+ace
+
+-----------------------*/
+
+
+
+/*--------------------------------------
+
+服　- cloth -
+
+---------------------------------------*/
+/* タブっぽく並べて */
+#aceTab ul {
+	overflow:visible;
+	height:auto;
+	list-style:none;
+	border-bottom:none;
+	height:60px;
+	float:left;
+	margin-top:0px;
+}
+#aceTab li {
+	display: inline-block;
+	width:50px;
+	height:50px;
+	padding:5px;
+	background:none;
+	margin-top:0px;
+}
+
+
+/* 最初はパネルは非表示 */
+#aceTab button{
+	width:40px;
+	height:40px;
+	margin-top:0px;
+}
+
+#aceTab .cCap{
+	background: url(images/icon_cap.png);
+	background-size: contain;
+}
+
+#aceTab .cPias{
+	background: url(images/icon_earring.png);
+	background-size: contain;
+}
+
+#aceTab .cGlass{
+	background: url(images/icon_glass.png);
+	background-size: contain;
+}
+
+#aceTab .cHige{
+	background: url(images/icon_hige.png);
+	background-size: contain;
+}
+
+#aceTab .cHokuro{
+	background: url(images/icon_hokuro.png);
+	background-size: contain;
+}
+
+#aceTab .cStrap{
+	background: url(images/icon_necklace.png);
+	background-size: contain;
+}
+
+#aceTab button:hover{
+	margin-top:-10px;
+	width:50px;
+	height:50px;
+	transition: 0.1s ;
+	cursor: pointer;
+}
+
+#aceTab .active {
+	margin-top:-10px;
+	width:50px;
+	height:50px;
+	cursor: pointer;
+}
+
+
+
+
+
+/*------------------------------
+
+背景選択
+
+-------------------------------*/
+
+.colorPanel{
+	margin-bottom:10px;
+}
+
+
+/*--------------------------------------
+
+小物 - freeParts -
+
+---------------------------------------*/
+/* タブっぽく並べて */
+#freeTab ul {
+	overflow:visible;
+	height:auto;
+	list-style:none;
+	border-bottom:none;
+	height:60px;
+	float:left;
+	margin-top:0px;
+	margin-left:-5px;
+}
+#freeTab li {
+	display: inline-block;
+	width:50px;
+	height:50px;
+	padding:5px;
+	background:none;
+	margin-top:0px;
+}
+
+
+/* 最初はパネルは非表示 */
+
+#freeTab button{
+	width:40px;
+	height:40px;
+	margin-top:0px;
+}
+
+
+#freeTab button:hover{
+	margin-top:-5px;
+	width:50px;
+	height:50px;
+	transition: 0.1s ;
+	cursor: pointer;
+}
+
+#freeTab .active {
+	margin-top:-5px;
+	width:50px;
+	height:50px;
+	cursor: pointer;
+}
+
+#freeTab .cFront{
+	background: url(images/icon_front.png);
+	background-size: contain;
+}
+
+#freeTab .cBack{
+	background: url(images/icon_back.png);
+	background-size: contain;
+}
+
+.freeArea{
+	display:none;
+}
