@@ -1,0 +1,179 @@
+@charset "UTF-8";
+/* CSS Document */
+/*--------------------------------
+
+名称: mod-result.css
+クラス: mod-result
+用途: リザルトボタンと結果まわり
+
+--------------------------------*/
+
+/*リザルト出力する用のボタン*/
+.allBody .btn {
+	width:145px;
+	height:50px;
+	border:5px solid #003c88;
+	border-radius: 10px;
+	float:left;
+}
+
+.allBody .btn:hover {
+	background: #003c88;
+	cursor: pointer;
+}
+
+.allBody .btn a {
+	font-size: 14px;
+	font-weight: 700;
+	text-decoration: none;
+	color: #003c88;
+	padding: 10px;
+}
+
+.allBody .btn a:hover {
+	color: #fff;
+}
+
+.onlyFace .btn {
+	width:145px;
+	height:50px;
+	border:5px solid #ed6103;
+	border-radius: 10px;
+	float:right;
+}
+
+.onlyFace .btn:hover {
+	background: #ed6103;
+}
+
+.onlyFace .btn a {
+	font-size: 14px;
+	font-weight: 700;
+	text-decoration: none;
+	color: #ed6103;
+	padding: 10px;
+}
+
+.onlyFace .btn a:hover {
+	color: #fff;
+}
+
+
+
+/*一部切り取り*/
+#kiritori_screen{
+	width:400px;
+	height:400px;
+	background-color: #f00;
+	position:absolute;
+	margin:0 auto 0 auto;
+	z-index:3000;
+}
+
+/*出力画像用id*/
+.screen_image{
+	display:block;
+	margin:0 auto;
+	width:100%;
+}
+
+/*ダウンロード処理*/
+a#download{
+	width:300px;
+	height:80px;
+	text-align:left;
+	background-image:url(images/dl_splite.png);
+	background-repeat:no-repeat;
+	text-decoration:none;
+	margin:40px auto 40px auto;
+	display:block;
+}
+  
+  a#download:hover{
+	background-position: 0 -80px;
+}
+
+
+button{
+	border-style:none;
+	background:#fff;
+	display:block;
+	margin:0px auto 100px auto;
+}
+#back{
+	margin:50px auto 0 auto;
+	display:block;
+	width:80px;
+	height:40px;
+}
+
+
+  /* Lightbox で表示させるDIV要素のCSS */
+  #lightbox-panel2 {
+  -moz-border-radius: 6px;
+  background: #fff;
+  -webkit-border-radius: 6px;
+  -webkit-box-shadow: rgba(0,0,0,.6) 0px 2px 12px;
+  -moz-box-shadow: rgba(0,0,0,.6) 0px 2px 12px;
+  padding: 40px 80px 80px 80px;
+  width: 700px;
+  height: 450px;
+  position:fixed;
+  top:50px;
+  left:50%;
+  display:none;
+  z-index:10;
+  border:2px solid #ccc;
+  margin-left:-410px;
+  }
+  
+  #lightbox-panel2 h1{
+	  margin-bottom:20px;
+	  text-align:center;
+  }
+
+
+  #BlackWindow2 {
+  display:none;
+  background:#000000;
+  opacity:0.7;/*黒地の背景の調整はこの数値で調整*/
+  filter:alpha(opacity=70);/*黒地の背景の調整はこの数値で調整*/
+  position:absolute;
+  top:0px;
+  left:0px;
+  min-width:100%;
+  min-height:100%;
+  z-index:1;
+  	overflow:hidden;
+  }
+
+#close-panel2{
+	width:300px;
+	height:80px;
+	text-align:left;
+	background-image:url(images/close_splite.png);
+	background-position: 0 0;
+	text-decoration:none;
+	margin:20px auto 30px auto;
+	display:block;
+}
+  
+ #close-panel2:hover{
+	background-position: 0 -80px;
+}
+
+.screenLeft{
+	width:300px;
+	height:450px;
+	float:left;
+}
+
+.screenRight{
+	width:300px;
+	height:450px;
+	float:right;
+}
+
+.clear{
+	clear:both;
+}
