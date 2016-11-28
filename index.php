@@ -5,6 +5,6 @@
 <title>HOME'S MAKER</title>
 </head>
 <body>
-<a href="maker.php">はじめる</a>
+<?php include "index.html"; ?>
 </body>
 </html>

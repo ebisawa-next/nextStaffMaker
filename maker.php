@@ -2,8 +2,12 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="stylesheet" type="text/css" href="style.css">
-<link rel="stylesheet" type="text/css" href="parts.css">
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/parts.css">
+<link rel="stylesheet" type="text/css" href="css/layout.css">
+<link rel="stylesheet" type="text/css" href="css/mod/mod-partsSelect.css">
+<link rel="stylesheet" type="text/css" href="css/mod/mod-result.css">
+<link rel="stylesheet" type="text/css" href="css/mod/mod-canvas.css">
 <script type="text/javascript" src="js/jquery-2.0.2.min.js"></script>
 <script type="text/javascript" src="js/jqueryupload.js"></script>
 <script type="text/javascript" src="js/jquery.balloon.js"></script>
@@ -80,12 +84,12 @@ $("#BlackWindow3, #lightbox-panel3").fadeOut(300);/*フォードアウトの速�
 $(document).ready(function() {
  
         $('.area:first').show();
-    $('.tab li:first').addClass('active');
+    $('.selectTabUl li:first').addClass('active');
 
 
-    $('.tab li').click(function() {
+    $('.selectTabUl li').click(function() {
 
-        $('.tab li').removeClass('active');
+        $('.selectTabUl li').removeClass('active');
         $(this).addClass('active');
         $('.area').hide();
 
@@ -158,9 +162,6 @@ $(document).ready(function() {
 });
 </script>
 
-
-
-
 <!-- 選択のやつ-->
 <script>
 $(document).ready(function() {
@@ -175,22 +176,21 @@ $(document).ready(function() {
 
 </head>
 <body>
-    <div id="container">
-        <div class="makerInner">  
-          <a href="index.html"><img src="images/logo.png" class="logo"></a>
+    <div class="sec-container">
+        <div class="sec-inner">  
+          <a href="index.html"><img src="images/default/logo.png" class="logo"></a>
             <!--canvas部分-->
-            <div class="box2">
-            <?php include "canvas.php"; ?>
-            <?php include "result.php"; ?>
+            <div class="sec-leftBox">
+                <?php include "php_include/mod-canvas.php"; ?>
+                <?php include "php_include/mod-result.php"; ?>
             </div>
 
             <!--タブとパーツ一覧-->
-            <?php include "parts.php"; ?>
-            
-            <div class="clear"></div>
-          
-        </div><!--.inner end-->
-</div><!--#container end-->
+            <div class="sec-rightBox">
+                <?php include "php_include/mod-partsSelect.php"; ?>
+            </div>
+        </div><!--.sec-inner end-->
+</div><!--sec-container end-->
 
 
 
