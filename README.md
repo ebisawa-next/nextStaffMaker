@@ -1,2 +1,2 @@
 # nextStaffMaker
-# nextStaffMaker
+# 楽しいアバターメーカーだお！^p^
