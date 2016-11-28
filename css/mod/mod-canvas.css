@@ -1,0 +1,44 @@
+@charset "UTF-8";
+/* CSS Document */
+/*--------------------------------
+
+名称: mod-canvas.css
+クラス: mod-canvas
+用途: キャンバス部分
+
+--------------------------------*/
+/*---プレビューの箱---*/
+.mod-canvas .radiusBox{
+	padding:0;
+	width:299px;
+	height:450px;
+	margin:5px 0 25px;
+	border: 5px solid;
+	border-color: #ed6103;
+	border-radius:10px;
+	transform: 0.5;
+
+}
+
+.mod-canvas #bgColorParts{
+	background: #ed6103;
+}
+
+.mod-canvas .canvasSize{
+	width: 600px;
+	height: 900px;
+}
+
+.mod-canvas #targetScreen{
+	width:600px;
+	height:900px;
+}
+
+.mod-canvas .marginchosei{
+	margin-left:33.5px;
+	margin-top:40px;
+}
+
+.mod-canvas #scale{
+	transform:scale(0.5);
+}
