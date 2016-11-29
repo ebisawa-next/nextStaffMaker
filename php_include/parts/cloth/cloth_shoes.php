@@ -1,4 +1,3 @@
-
 <div class="partsList">
 <?php
 //画像ファイル一覧を表示するパスを指定する
@@ -23,9 +22,9 @@ $num = count($array);
  
 //HTML文を出力　テーブルの開始を指定
 print("<table border=0><tr>");
- 
+?><td><div><a name="cTab3"><input type="image" name="mayu" onClick="bgImgChange('url(images/none.png)','shoesParts');" img src= "images/none_s.png"></a></div></td><?php
 //横に並べる画像の最大数を設定する
-$max = 6;
+$max = 5;
  
 //カウント数の初期化
 $cnt = 0;
@@ -40,23 +39,9 @@ for ($i=0;$i<$num;$i++){
     //または｢JPEG｣または｢png｣または｢PNG｣の場合は実寸表示の
     //リンク付きで画像を表示する
      
-    if  (
-         Eregi('png$', $filename)) {
+    if  (Eregi('png$', $filename)) {
         print("<td><div><input type=image name=body img src= " .$filename. " onClick=bgImgChange('url($filename2)','shoesParts');></div></td>");
 	
-	
-	    
-	
-	//print("<td><img src = ".$filename." ></td>");
-         
-		 //print '<input type="button" value="るな" onClick="location.href=\''.$hoge.'\'">';
-		 
-		 
-		 //print("<td><input type=" image " img src= " .$filename." onClick = " bgImgChange('url( .$filename. )','bgImg_hoge1'); " >';
-
-		 //<input type="image" name="hoge" onClick="bgImgChange('url( .$filename. )','bgImg_hoge1');"  src="img/face01.png" class="ava">
-		 
-		 
         //カウント数の初期化
         $cnt = $cnt + 1;
          
@@ -71,6 +56,5 @@ for ($i=0;$i<$num;$i++){
 print("");
  
 ?>
-
-<td><div><input type="image" name="mayu" onClick="bgImgChange('url(images/none.png)','shoesParts');" img src= "images/none_s.png"></div></td></tr></table>
+</tr></table>
 </div>
