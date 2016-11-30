@@ -1,4 +1,5 @@
 
+<table border="0"><tr><td><div><input type="image" name="mayu" onClick="bgImgChange('url(images/none.png)','hairParts');" img src= "images/none_s.png"></div></td>
 <?php
 //画像ファイル一覧を表示するパスを指定する
 $path = "images/parts/hair";
@@ -21,7 +22,7 @@ $array = scandir($path,1);
 $num = count($array);
  
 //HTML文を出力　テーブルの開始を指定
-print("<table border=0><tr>");
+print("");
  
 //横に並べる画像の最大数を設定する
 $max = 6;
@@ -70,6 +71,6 @@ for ($i=0;$i<$num;$i++){
 print("");
  
 ?>
-<td><div><input type="image" name="mayu" onClick="bgImgChange('url(images/none.png)','hairParts');" img src= "images/none_s.png"></div></td></tr></table>
+</tr></table>
 
 
