@@ -1,9 +1,7 @@
-<div class="partsList">
+<div class="partsList cTab1">
 <?php
 //画像ファイル一覧を表示するパスを指定する
-$none = "images/none_s.png";
 $path = "images/parts/cloth/tops";
-$path_one = "images/parts/cloth/onepiece";
  
 //パスの表示
 print("");
@@ -18,17 +16,14 @@ print("");
  
 //降順にソートする場合はソート順に"1"を指定する
 $array = scandir($path,1);
-$array_one = scandir($path_one,1);
  
 //count命令により配列の個数を取得する
 $num = count($array);
-$num_one = count($array_one);
- 
+
 //HTML文を出力　テーブルの開始を指定
 print("<table border=0><tr>");
-?><td><div><a name="cTab1"><input type="image" name="mayu" onClick="bgImgChange('url(images/none.png)','clothParts');" img src= "images/none_s.png"></a></div></td><?php
 //横に並べる画像の最大数を設定する
-$max = 5;
+$max = 6;
  
 //カウント数の初期化
 $cnt = 0;
@@ -55,29 +50,7 @@ for ($i=0;$i<$num;$i++){
         }
     }
 }
- ?></tr></table><?php
 //HTML文を出力　テーブルの終了を指定
-print("");
-print("<table border=0><tr>");
-?><td><div><input type="image" name="mayu" onClick="bgImgChange('url(images/none.png)','onepieceParts');" img src= "images/none_s.png"></div></td><?php
-for ($i=0;$i<$num_one;$i++){
-    //$filenameにファイル名を設定
-    $filename3 = "images/parts/cloth/onepiece/" . $array_one[$i];
-    $filename4 = "images/parts/cloth/onepiece/cv/" . $array_one[$i];
-
-    if (Eregi('png$', $filename3)) {
-        print("<td><div><input type=image name=body img src= " .$filename3. " onClick=bgImgChange('url($filename4)','onepieceParts');></div></td>");
-    
-        //カウント数の初期化
-        $cnt = $cnt + 1;
-         
-        //カウント数の判定 最大数以上の場合は改行し、カウントを初期化する
-        if ($cnt >= $max) {
-            print("</tr><tr>");
-            $cnt = 0;
-        }
-    }
-}
 print("");
 ?>
 </tr>

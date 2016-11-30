@@ -1,4 +1,4 @@
-<div class="partsList">
+<div class="partsList cTab4">
 <?php
 //画像ファイル一覧を表示するパスを指定する
 $path = "images/parts/cloth/shoes";
@@ -22,9 +22,8 @@ $num = count($array);
  
 //HTML文を出力　テーブルの開始を指定
 print("<table border=0><tr>");
-?><td><div><a name="cTab3"><input type="image" name="mayu" onClick="bgImgChange('url(images/none.png)','shoesParts');" img src= "images/none_s.png"></a></div></td><?php
 //横に並べる画像の最大数を設定する
-$max = 5;
+$max = 6;
  
 //カウント数の初期化
 $cnt = 0;
