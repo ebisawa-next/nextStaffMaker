@@ -85,8 +85,11 @@ jQuery(function($){
 <div class="partsList">
     <div class="clothArea" id="cTab1"> 
         <?php include "php_include/parts/cloth/cloth_tops.php"; ?>
+        <?php include "php_include/parts/cloth/cloth_onepiece.php"; ?>
+        <?php include "php_include/parts/cloth/cloth_bottoms.php"; ?>
+        <?php include "php_include/parts/cloth/cloth_shoes.php"; ?>
+        <?php include "php_include/parts/cloth/cloth_socks.php"; ?>
     </div>
-
     <div class="clothArea" id="cTab2"> 
         <?php include "php_include/parts/cloth/cloth_bottoms.php"; ?>
     </div>
@@ -98,9 +101,4 @@ jQuery(function($){
     <div class="clothArea" id="cTab4"> 
         <?php include "php_include/parts/cloth/cloth_socks.php"; ?>
     </div>
-
-    <div class="clothArea" id="cTab5"> 
-        <?php include "php_include/parts/cloth/cloth_onepiece.php"; ?>
-    </div>
-
 </div>

@@ -1,5 +1,3 @@
-
-<table border="0"><tr><td><div><input type="image" name="mayu" onClick="bgImgChange('url(images/none.png)','hairParts');" img src= "images/none_s.png"></div></td>
 <?php
 //画像ファイル一覧を表示するパスを指定する
 $path = "images/parts/hair";
@@ -22,7 +20,7 @@ $array = scandir($path,1);
 $num = count($array);
  
 //HTML文を出力　テーブルの開始を指定
-print("");
+print("<table border=0><tr>");
  
 //横に並べる画像の最大数を設定する
 $max = 6;
@@ -40,22 +38,8 @@ for ($i=0;$i<$num;$i++){
     //または｢JPEG｣または｢png｣または｢PNG｣の場合は実寸表示の
     //リンク付きで画像を表示する
      
-    if  (
-         Eregi('png$', $filename)) {
+    if (Eregi('png$', $filename)) {
         print("<td><div><input type=image class=ct name=hair img src= " .$filename. " onClick=bgImgChange('url($filename2)','hairParts');></div></td>");
-    
-    
-    
-    
-    //print("<td><img src = ".$filename." ></td>");
-         
-         //print '<input type="button" value="るな" onClick="location.href=\''.$hoge.'\'">';
-         
-         
-         //print("<td><input type=" image " img src= " .$filename." onClick = " bgImgChange('url( .$filename. )','bgImg_hoge1'); " >';
-
-         //<input type="image" name="hoge" onClick="bgImgChange('url( .$filename. )','bgImg_hoge1');"  src="img/face01.png" class="ava">
-         
          
         //カウント数の初期化
         $cnt = $cnt + 1;
@@ -72,5 +56,3 @@ print("");
  
 ?>
 </tr></table>
-
-

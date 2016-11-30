@@ -41,19 +41,17 @@ for ($i=0;$i<$num;$i++){
      
     if  (Eregi('png$', $filename)) {
         print("<td><div><input type=image name=face img src= " .$filenameThumb. " onClick=bgImgChange('url($filename)','faceLine');></div></td>");
-
-	    
-	
-	//print("<td><img src = ".$filename." ></td>");
+        
+    
+    //print("<td><img src = ".$filename." ></td>");
          
-		 //print '<input type="button" value="るな" onClick="location.href=\''.$hoge.'\'">';
-		 
-		 
-		 //print("<td><input type=" image " img src= " .$filename." onClick = " bgImgChange('url( .$filename. )','bgImg_hoge1'); " >';
-
-		 //<input type="image" name="hoge" onClick="bgImgChange('url( .$filename. )','bgImg_hoge1');"  src="img/face01.png" class="ava">
-		 
-		 
+         //print '<input type="button" value="るな" onClick="location.href=\''.$hoge.'\'">';
+         
+         
+         //print("<td><input type=" image " img src= " .$filename." onClick = " bgImgChange('url( .$filename. )','bgImg_hoge1'); " >';
+         //<input type="image" name="hoge" onClick="bgImgChange('url( .$filename. )','bgImg_hoge1');"  src="img/face01.png" class="ava">
+         
+         
         //カウント数の初期化
         $cnt = $cnt + 1;
          
@@ -66,13 +64,11 @@ for ($i=0;$i<$num;$i++){
 }
 //HTML文を出力　テーブルの終了を指定
 print("</tr></table>");
-
-
 ?>
 
 <table><tr><td>
-<div><input type="image" name="mayu" onClick="bgImgChange('url(parts/face/cv/body01_sk01.png)','bodyLine');" img src= "images/parts/face/cv/body01_sk00.png"></div>
+<div><input type="image" name="mayu" onClick="bgImgChange('url(images/parts/face/cv/body01_sk01.png)','bodyLine');" img src= "images/parts/face/cv/body01_sk00.png"></div>
 </td><td>
-<div><input type="image" name="mayu" onClick="bgImgChange('url(parts/face/cv/body02_sk01.png)','bodyLine');" img src= "images/parts/face/cv/body02_sk00.png"></div>
+<div><input type="image" name="mayu" onClick="bgImgChange('url(images/parts/face/cv/body02_sk01.png)','bodyLine');" img src= "images/parts/face/cv/body02_sk00.png"></div>
 </td></tr></table>
 </div>

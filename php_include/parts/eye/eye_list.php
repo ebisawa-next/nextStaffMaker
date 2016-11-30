@@ -1,4 +1,3 @@
-
 <!--背景パネル-->
 <div class="colorPanel">
 <img src="images/haikei.png" style="margin-top:10px">
