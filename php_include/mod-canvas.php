@@ -30,7 +30,7 @@
                         <div class="canvasSize" id="glassParts"><!--めがね--></div>
                         <div class="canvasSize" id="higeParts"><!--ひげ--></div>
                         <div class="canvasSize" id="piasParts"><!--ピアス--></div>
-                        <div class="canvasSize" style="background-image:url(images/parts/hair/cv/front01_bk.png);" id="hairParts"><!--髪--></div>
+                        <div class="canvasSize" style="background-image:url(images/parts/hair/cv/mfront01_bk.png);" id="hairParts"><!--髪--></div>
                         <div class="canvasSize" id="headParts"><!--帽子--></div>
                         <div class="canvasSize" id="otherParts"><!--その他小物--></div><!--その他小物-->
                     </div>
