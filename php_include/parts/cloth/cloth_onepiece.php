@@ -1,4 +1,3 @@
-<div class="partsList cTab2">
 
 <?php
 //画像ファイル一覧を表示するパスを指定する
@@ -41,7 +40,7 @@ for ($i=0;$i<$num;$i++){
     //リンク付きで画像を表示する
      
     if (Eregi('png$', $filename)) {
-        print("<td><div><input type=image name=body img src= " .$filename. " onClick=bgImgChange('url($filename2)','onepieceParts');></div></td>");
+        print("<td><div><input type=image name=body img src= " .$filename. " onClick=bgImgChange('url($filename2)','clothParts');></div></td>");
 		 
         //カウント数の初期化
         $cnt = $cnt + 1;
@@ -58,4 +57,3 @@ print("");
  
 ?>
 </tr></table>
-</div>

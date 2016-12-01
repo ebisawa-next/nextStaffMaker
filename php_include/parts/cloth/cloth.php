@@ -1,6 +1,6 @@
 
 <!--プレビュー画面の切り替え-->
-<script>
+<!--<script>
 jQuery(function($){
   $('.clothM').click(function(){
       var buttanAttr = $(this).attr('title');
@@ -73,7 +73,7 @@ jQuery(function($){
 });
 </script>
 
-
+-->
 
 <!--プレビュー画面の切り替え-->
 
@@ -83,22 +83,9 @@ jQuery(function($){
 </div>
 
 <div class="partsList">
-    <div class="clothArea" id="cTab1"> 
         <?php include "php_include/parts/cloth/cloth_tops.php"; ?>
         <?php include "php_include/parts/cloth/cloth_onepiece.php"; ?>
         <?php include "php_include/parts/cloth/cloth_bottoms.php"; ?>
         <?php include "php_include/parts/cloth/cloth_shoes.php"; ?>
         <?php include "php_include/parts/cloth/cloth_socks.php"; ?>
-    </div>
-    <div class="clothArea" id="cTab2"> 
-        <?php include "php_include/parts/cloth/cloth_bottoms.php"; ?>
-    </div>
-
-    <div class="clothArea" id="cTab3"> 
-        <?php include "php_include/parts/cloth/cloth_shoes.php"; ?>
-    </div>
-
-    <div class="clothArea" id="cTab4"> 
-        <?php include "php_include/parts/cloth/cloth_socks.php"; ?>
-    </div>
 </div>

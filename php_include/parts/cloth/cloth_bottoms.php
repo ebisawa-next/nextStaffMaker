@@ -1,5 +1,4 @@
-<div class="partsList">
-<a name=cTab2></a>
+<div id="c2">C2</div>
 <?php
 //画像ファイル一覧を表示するパスを指定する
 $path = "images/parts/cloth/bottoms";
@@ -57,4 +56,3 @@ print("");
 ?>
 </tr>
 </table>
-</div>

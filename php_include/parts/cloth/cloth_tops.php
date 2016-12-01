@@ -1,4 +1,4 @@
-<div class="partsList cTab1">
+<div id="c1">tops</div>
 <?php
 //画像ファイル一覧を表示するパスを指定する
 $path = "images/parts/cloth/tops";
@@ -19,7 +19,6 @@ $array = scandir($path,1);
  
 //count命令により配列の個数を取得する
 $num = count($array);
-
 //HTML文を出力　テーブルの開始を指定
 print("<table border=0><tr>");
 //横に並べる画像の最大数を設定する
@@ -32,17 +31,14 @@ $cnt = 0;
 for ($i=0;$i<$num;$i++){
     //$filenameにファイル名を設定
     $filename = "images/parts/cloth/tops/" . $array[$i];
- 	$filename2 = "images/parts/cloth/tops/cv/" . $array[$i];
-
+    $filename2 = "images/parts/cloth/tops/cv/" . $array[$i];
     //ファイル名の拡張子が｢gif｣または｢GIF｣または｢jpg｣または｢JPG｣
     //または｢JPEG｣または｢png｣または｢PNG｣の場合は実寸表示の
     //リンク付きで画像を表示する
     if (Eregi('png$', $filename)) { //ファイル直下のpngファイルを持ってくる
-
         print("<td><div><input type=image name=body img src= " .$filename. " onClick=bgImgChange('url($filename2)','clothParts');></div></td>");
         //カウント数の初期化
         $cnt = $cnt + 1;
-
         // カウント数の判定 最大数以上の場合は改行し、カウントを初期化する
         if ($cnt >= $max) {
             print("</tr><tr>");
@@ -55,4 +51,3 @@ print("");
 ?>
 </tr>
 </table>
-</div>
