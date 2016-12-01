@@ -40,9 +40,6 @@ $(function(){
 
 
 
-
-
-
 <!--アイコン生成用のlightbox-->
     <script>
     $(document).ready(function(){
@@ -103,25 +100,6 @@ $(document).ready(function() {
 </script>
 
 
-<script>
-$(document).ready(function() {
- 
-    $('.clothArea:first').show();
-    $('#clothTab button:first').addClass('active');
-
-
-    $('#clothTab button').click(function() {
-
-        $('#clothTab button').removeClass('active');
-        $(this).addClass('active');
-        $('.clothArea').hide();
-
-    
-        $($(this).find('a').attr('href')).fadeIn();
-        return false;
-    });
-});
-</script>
 
 <script>
 $(document).ready(function() {

@@ -13,16 +13,13 @@
 <script type="text/javascript" src="js/jquery.balloon.js"></script>
 <script type="text/javascript" src="js/html2canvas.js"></script>
 <script type="text/javascript" src="js/jscolor.js"></script>
-
+<script type="text/javascript" src="js/jscolor2.js"></script>
+<script type="text/javascript" src="js/desvg.js"></script>
 <title>HOME'S MAKER α版</title>
-
-
-
 <!--画像切り替えJS-->
 <script type="text/javascript">
 function bgImgChange(path,id_name) {document.getElementById(id_name).style.backgroundImage=path; }
 </script>
-
 
 <!-- 背景色切り替え -->
 <script type="text/javascript">
@@ -40,6 +37,8 @@ $(function(){
     });
 });
 </script>
+
+
 
 <!--アイコン生成用のlightbox-->
     <script>
@@ -101,25 +100,6 @@ $(document).ready(function() {
 </script>
 
 
-<script>
-$(document).ready(function() {
- 
-    $('.clothArea:first').show();
-    $('#clothTab button:first').addClass('active');
-
-
-    $('#clothTab button').click(function() {
-
-        $('#clothTab button').removeClass('active');
-        $(this).addClass('active');
-        $('.clothArea').hide();
-
-    
-        $($(this).find('a').attr('href')).fadeIn();
-        return false;
-    });
-});
-</script>
 
 <script>
 $(document).ready(function() {
@@ -176,6 +156,7 @@ $(document).ready(function() {
 
 </head>
 <body>
+<?php include_once("svg/eye.svg"); ?>
     <div class="sec-container">
         <div class="sec-inner">  
           <a href="index.html"><img src="images/default/logo.png" class="logo"></a>
@@ -189,7 +170,12 @@ $(document).ready(function() {
             <div class="sec-rightBox">
                 <?php include "php_include/mod-partsSelect.php"; ?>
             </div>
+
+
         </div><!--.sec-inner end-->
+
+
+
 </div><!--sec-container end-->
 
 
