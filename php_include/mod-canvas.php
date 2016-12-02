@@ -20,12 +20,12 @@
                         <div class="canvasSize" style="background-image:url(images/parts/face/cv/circle_sk01.png);" id="faceLine"><!--フェイスライン--></div>
                         <div class="canvasSize" id="strapParts"><!--首パーツ--></div>
                         <div class="canvasSize eyeParts" id="eyeParts" style="background-image:url();"><!--目-->
-                        <svg width="600px" height="900px"><use id="svg3" xlink:href="#eye01" class="viewBox"/></use></svg>
+                        <svg width="600px" height="900px"><use id="svg3" xlink:href="#eye02" class="viewBox"/></use></svg>
                         </div>
                         <div class="canvasSize" id="hokuroParts"><!--ほくろ-->
                             <!--<img src="svg/eye01_nml.svg" width="600px" height="900px" id="svg4">-->
                         </div>
-                        <div class="canvasSize" id="mouthParts" style="background-image:url(images/parts/mouth/cv/mouse01.png);"><!--口--></div>
+                        <div class="canvasSize" id="mouthParts" style="background-image:url(images/parts/mouth/cv/mouse12.png);"><!--口--></div>
                         <div class="canvasSize" id="noseParts" style="background-image:url(images/parts/nose/cv/nose01.png);"><!--鼻--></div>
                         <div class="canvasSize" id="glassParts"><!--めがね--></div>
                         <div class="canvasSize" id="higeParts"><!--ひげ--></div>
