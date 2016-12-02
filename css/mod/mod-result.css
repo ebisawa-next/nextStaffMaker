@@ -82,7 +82,7 @@ a#download{
 	width:300px;
 	height:80px;
 	text-align:left;
-	background-image:url(images/dl_splite.png);
+	background-image:url(images/default/dl_splite.png);
 	background-repeat:no-repeat;
 	text-decoration:none;
 	margin:40px auto 40px auto;
@@ -151,7 +151,7 @@ button{
 	width:300px;
 	height:80px;
 	text-align:left;
-	background-image:url(images/close_splite.png);
+	background-image:url(images/default/close_splite.png);
 	background-position: 0 0;
 	text-decoration:none;
 	margin:20px auto 30px auto;

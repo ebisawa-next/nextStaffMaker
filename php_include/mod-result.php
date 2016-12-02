@@ -9,7 +9,7 @@
             <img class="screen_image">
         </div>
         <div class="screenRight">
-            <a id="download" href="#" download="uniq_icon.png"></a>
+            <a id="download" href="#" download="nextStaffMaker_icon.png"></a>
              <p align="center">
             <a id="close-panel2" href="#" class="margintop"></a>
                   </p>

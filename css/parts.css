@@ -9,14 +9,12 @@
 
 .partsList{
 	width:auto;
-	height:370px;
+	height: 370px;
 	padding: 10px 0px 0px 10px;
-	overflow-y:scroll;
+	overflow-y:overlay;
 	scrollbar-base-color: #FC0;
-　　scrollbar-arrow-color: #fff;
+　　  scrollbar-arrow-color: #fff;*
 }
-
-
 /*--------------------------------------
 
 髪の毛　- hair -
@@ -188,6 +186,15 @@
 
 ---------------------------------------*/
 /* タブっぽく並べて */
+#cloth .colorList{
+	width:auto;
+	padding: 10px 0px 10px 25px;
+	height:50px;
+	background:#fff;
+	border-bottom: 2px solid #ccc;
+}
+
+
 #clothTab ul {
 	overflow:visible;
 	height:auto;
@@ -222,13 +229,6 @@
 	width:50px;
 	height:50px;
 	transition: 0.1s ;
-	cursor: pointer;
-}
-
-#clothTab .active {
-	margin-top:-10px;
-	width:50px;
-	height:50px;
 	cursor: pointer;
 }
 

@@ -23,10 +23,27 @@
 .mod-canvas #bgColorParts{
 	background: #ed6103;
 }
-
+.mod-canvas .relative {
+	position: relative;
+	width: 600px;
+	height: 900px;
+	margin-left: -200px;
+	margin-top: -80px;
+}
+.mod-canvas .relative:after {
+  content: ".";  /* 新しいコンテンツ */
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden; /* 非表示に */
+}
 .mod-canvas .canvasSize{
 	width: 600px;
 	height: 900px;
+	position: absolute;
+}
+.mod-canvas .eyeParts {
+	position: absolute;
 }
 
 .mod-canvas #targetScreen{

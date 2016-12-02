@@ -1,6 +1,4 @@
 
-<div class="partsList">
-
 <?php
 //画像ファイル一覧を表示するパスを指定する
 $path = "images/parts/cloth/onepiece";
@@ -41,22 +39,8 @@ for ($i=0;$i<$num;$i++){
     //または｢JPEG｣または｢png｣または｢PNG｣の場合は実寸表示の
     //リンク付きで画像を表示する
      
-    if  (
-         Eregi('png$', $filename)) {
-        print("<td><div><input type=image name=body img src= " .$filename. " onClick=bgImgChange('url($filename2)','onepieceParts');></div></td>");
-	
-	
-	    
-	
-	//print("<td><img src = ".$filename." ></td>");
-         
-		 //print '<input type="button" value="るな" onClick="location.href=\''.$hoge.'\'">';
-		 
-		 
-		 //print("<td><input type=" image " img src= " .$filename." onClick = " bgImgChange('url( .$filename. )','bgImg_hoge1'); " >';
-
-		 //<input type="image" name="hoge" onClick="bgImgChange('url( .$filename. )','bgImg_hoge1');"  src="img/face01.png" class="ava">
-		 
+    if (Eregi('png$', $filename)) {
+        print("<td><div><input type=image name=body img src= " .$filename. " onClick=bgImgChange('url($filename2)','clothParts');></div></td>");
 		 
         //カウント数の初期化
         $cnt = $cnt + 1;
@@ -72,6 +56,4 @@ for ($i=0;$i<$num;$i++){
 print("");
  
 ?>
-<td><div><input type="image" name="mayu" onClick="bgImgChange('url(images/none.png)','onepieceParts');" img src= "images/none_s.png"></div></td></tr></table>
-
-</div>
+</tr></table>

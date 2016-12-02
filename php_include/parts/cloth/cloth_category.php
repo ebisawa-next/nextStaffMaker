@@ -1,17 +1,37 @@
 
 <div id="clothTab">
-<ul class="clothCategory">
-    <li><button class="btn cTops"><a href="#cTab1"></a></button></li>
-    <li><button class="btn cBottoms"><a href="#cTab2"></a></button></li>
-    <li><button class="btn cShoes"><a href="#cTab3"></a></button></li>
-    <li><button class="btn cSocks"><a href="#cTab4"></a></button></li>
-    <li><button class="btn cOnepieces"><a href="#cTab5"></a></button></li>
-</ul>
 
+	<ul class="clothCategory">
+	    <li><a href="#c1" class="jump"><button class="btn cTops"></button></a></li>
+	    <li><a href="#c2" class="jump"><button class="btn cBottoms"/></button></a></li>
+	    <li><a href="#c3" class="jump"><button class="btn cShoes"></button></a></li>
+	    <li><a href="#c4" class="jump"><button class="btn cSocks"></button></a></li>
+	    <!--<li><button class="btn cOnepieces"><a href="#cTab5"></a></button></li> -->
+	</ul>
+
+	<!--
+	<ul>
+	    <li><a href="javascript:void(0)" class="jump">c1</a></li>
+    <li><a href="javascript:void(0)" class="jump">c2</a></li>
+    <li><a href="javascript:void(0)" class="jump">c3</a></li>
+    <li><a href="javascript:void(0)" class="jump">c4</a></li>
+    <li><a href="javascript:void(0)" class="jump">c5</a></li>
+    <li><a href="javascript:void(0)" class="jump">c6</a></li>
+    </ul>
+    -->
 </div>
-<ul class="sizeCategory">
+
+<!--
+    <li><a href="javascript:void(0)" class="jump">c1</a></li>
+    <li><a href="javascript:void(0)" class="jump">c2</a></li>
+    <li><a href="javascript:void(0)" class="jump">c3</a></li>
+    <li><a href="javascript:void(0)" class="jump">c4</a></li>
+    <li><a href="javascript:void(0)" class="jump">c5</a></li>
+    <li><a href="javascript:void(0)" class="jump">c6</a></li>
+-->
+<!-- <ul class="sizeCategory">
     <li><button class="clothM bottomM onepieceM sizeM" title="M"></button></li>
     <li><button class="clothL bottomL onepieceL sizeL" title="L"></button></li>
 </ul>
-
+ -->
 
