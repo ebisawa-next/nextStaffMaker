@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body {
-    background: #fff;
+    background: #ed6103;
     /*color: #fff;*/
     margin:0 auto;
     width:100%;
@@ -35,25 +35,31 @@ a{
 	width:200px;
 }
 .wrapper{
-	margin: 0 auto;
+	margin: 50px;
+    background-color: #ffffff;
+    border-radius: 10px;
 }
 .main{
 	margin: 20px;
 	text-align: center;
 }
+.main h1{
+    padding: 50px;
+
+}
 .moji{
-	margin: 50px 0;
+	margin: 10px 0;
 }
 
 a{
-	margin:0 auto;
+	margin:50px auto;
 	display: block;
 	text-align: center;
-	width: 380px;
-	font-size: 65px;
-	line-height: 128px;
+	width: 250px;
+	font-size: 33px;
+	line-height: 80px;
 	border-radius: 10px 10px 10px 10px;
-	border:solid 6px #ED6103;
+	border:solid 4px #ED6103;
 	color:#ED6103;
 }
 
