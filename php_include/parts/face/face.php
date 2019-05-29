@@ -101,4 +101,8 @@ jQuery(function($){
 
 
 <?php include "php_include/parts/face/face_color.php"; ?>
-<?php include "php_include/parts/face/face_list.php"; ?>
+<?php
+  $genre = "faceLine";
+  $path = "images/parts/face/";
+  include "php_include/parts/face/face_list.php";
+?>

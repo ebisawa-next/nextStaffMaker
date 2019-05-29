@@ -25,6 +25,9 @@
 }
 
 .mod-canvas .canvasSize{
+	position: absolute;
+	top: 0;
+	left: 0;
 	width: 600px;
 	height: 900px;
 }

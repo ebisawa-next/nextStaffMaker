@@ -2,16 +2,16 @@
     <ul class="partsList">
         <?php
             //画像ファイル一覧を表示するパスを指定する
-            $path = "images/parts/face";
+            // $path = "images/parts/face/";
             $array = scandir($path,1);
             $num = count($array);
 
             for ($i=0;$i<$num;$i++){
                 //$filenameにファイル名を設定
-                $filename = "images/parts/face/cv/" . $array[$i];
-                $filenameThumb = "images/parts/face/" . $array[$i];
+                $filename = $path . "cv/" . $array[$i];
+                $filenameThumb = $path . $array[$i];
                 if  (Eregi('png$', $filename)) {
-                    print("<li class=parts><div><input type=image name=face img src= " .$filenameThumb. " onClick=bgImgChange('url($filename)','faceLine');></div></li>");
+                    print("<li class=parts><div><input type=image name=face img src= " .$filenameThumb. " onClick=bgImgChange('url($filename)','$genre');></div></li>");
                 }
             }
         ?>

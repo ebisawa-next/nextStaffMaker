@@ -7,64 +7,55 @@
 用途: リザルトボタンと結果まわり
 
 --------------------------------*/
-
 /*リザルト出力する用のボタン*/
-.allBody .btn {
-	width:145px;
-	height:50px;
-	border:5px solid #003c88;
-	border-radius: 10px;
-	float:left;
+.mod-result {
+	margin-top: 20px;
 }
-
-.allBody .btn:hover {
-	background: #003c88;
+.mod-result .buttons {
+	display: flex;
+	list-style: none;
+}
+.mod-result .buttons .button {
+	width: 100%;
+}
+.mod-result .buttons .button:not(:first-child) {
+	margin-left: 20px;
+}
+.mod-result .buttons .button .btn {
+	display: block;
+	background-color: #fff;
+	border-radius: 10px;
+	text-align: center;
+	padding: 15px 0;
+	text-decoration: none;
+	font-size: 1.4rem;
+	font-weight: bold;
+}
+.mod-result .buttons .button .btn:hover {
 	cursor: pointer;
 }
-
-.allBody .btn a {
-	font-size: 14px;
-	font-weight: 700;
-	text-decoration: none;
+.mod-result .buttons .button .btn.is-body {
+	border:5px solid #003c88;
 	color: #003c88;
-	padding: 10px;
 }
-
-.allBody .btn a:hover {
+.mod-result .buttons .button .btn.is-body:hover {
+	background-color: #003c88;
 	color: #fff;
 }
-
-.onlyFace .btn {
-	width:145px;
-	height:50px;
-	border:5px solid #ed6103;
-	border-radius: 10px;
-	float:right;
-}
-
-.onlyFace .btn:hover {
-	background: #ed6103;
-}
-
-.onlyFace .btn a {
-	font-size: 14px;
-	font-weight: 700;
-	text-decoration: none;
+.mod-result .buttons .button .btn.is-face {
+	border: 5px solid #ed6103;
 	color: #ed6103;
-	padding: 10px;
 }
-
-.onlyFace .btn a:hover {
+.mod-result .buttons .button .btn.is-face:hover {
+	background-color: #ed6103;
 	color: #fff;
 }
-
 
 
 /*一部切り取り*/
 #kiritori_screen{
 	width:400px;
 	height:400px;
-	background-color: #f00;
 	position:absolute;
 	margin:0 auto 0 auto;
 	z-index:3000;
@@ -107,6 +98,27 @@ button{
 	height:40px;
 }
 
+.mod-result .modal {
+	display: none;
+}
+.mod-result .modal.is-show {
+	display: block;
+}
+.mod-result .modal.animate {
+	opacity: 0;
+	animation-name: fadeIn;
+	animation-duration: .15s;
+	animation-fill-mode: forwards;
+}
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 100;
+	}
+}
+
 
   /* Lightbox で表示させるDIV要素のCSS */
   #lightbox-panel2 {
@@ -121,7 +133,6 @@ button{
   position:fixed;
   top:50px;
   left:50%;
-  display:none;
   z-index:10;
   border:2px solid #ccc;
   margin-left:-410px;
@@ -134,7 +145,6 @@ button{
 
 
   #BlackWindow2 {
-  display:none;
   background:#000000;
   opacity:0.7;/*黒地の背景の調整はこの数値で調整*/
   filter:alpha(opacity=70);/*黒地の背景の調整はこの数値で調整*/
