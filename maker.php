@@ -41,24 +41,6 @@ $(function(){
 });
 </script>
 
-<!--アイコン生成用のlightbox-->
-    <script>
-    $(document).ready(function(){
-//show-panelボタンをクリックしたらLightBoxを表示する
-$("a#show-panel2").click(function(){
-$("#BlackWindow2, #lightbox-panel2").fadeIn(300);/*表示速度は数値を調整*/
-})
-//CloseボタンをクリックしたらLightBoxを閉じる
-$("a#close-panel2").click(function(){
-$("#BlackWindow2, #lightbox-panel2").fadeOut(300);/*フォードアウトの速度は数値を調整*/
-})
-//背景の黒地をクリックしたらLightBoxを閉じる
-$("#BlackWindow2").click(function(){
-$("#BlackWindow2, #lightbox-panel2").fadeOut(300);/*フォードアウトの速度は数値を調整*/
-})
-})
-
-</script>
 
 <!--アイコン生成用のlightbox-->
     <script>
@@ -186,6 +168,41 @@ $(document).ready(function() {
         <?php include "php_include/mod-partsSelect.php"; ?>
     </section>
 </section>
+
+<!--アイコン生成用のlightbox-->
+<script>
+    let targets = document.querySelectorAll('.prg-resultButton');
+    let lightbox = document.querySelector('.prg-lightbox');
+    for(let i = 0, len = targets.length; i < len; i++) {
+        targets[i].addEventListener('click', () => {
+            lightbox.classList.add('is-show', 'animate');
+            // $("#BlackWindow2, #lightbox-panel2").fadeIn(300);
+        }, false);
+    }
+    lightbox.addEventListener('animationend', () => {
+        lightbox.classList.remove('animate');
+    }, false);
+
+    let bg = document.querySelector('.prg-lightboxBg');
+    bg.addEventListener('click', () => {
+        lightbox.classList.remove('is-show');
+    });
+
+
+    // $(document).ready(function(){
+    //     //show-panelボタンをクリックしたらLightBoxを表示する
+    //     $("a#show-panel2").click(function(){
+    //     $("#BlackWindow2, #lightbox-panel2").fadeIn(300);/*表示速度は数値を調整*/
+    //     })
+    //     //CloseボタンをクリックしたらLightBoxを閉じる
+    //     $("a#close-panel2").click(function(){
+    //     $("#BlackWindow2, #lightbox-panel2").fadeOut(300);/*フォードアウトの速度は数値を調整*/
+    //     })
+    //     //背景の黒地をクリックしたらLightBoxを閉じる
+    //     $("#BlackWindow2").click(function(){
+    //     $("#BlackWindow2, #lightbox-panel2").fadeOut(300);/*フォードアウトの速度は数値を調整*/
+    // })
+</script>
 
 </body>
 </html>

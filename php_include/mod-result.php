@@ -1,29 +1,30 @@
 <div class="mod-result">
-<!--全身-->
-<div class="allBody">
-<button class="btn" onclick="screenshot('#bgColorParts')"><a href="#" id="show-panel2">全身を出力する</a></button>
+    <!--全身-->
+    <ul class="buttons">
+        <li class="button">
+            <p class="prg-resultButton btn is-body" href="#" onclick="screenshot('#bgColorParts')">全身を出力する</p>
+        </li>
+        <li class="button">
+            <p class="prg-resultButton btn is-face" href="#" onclick="screenshot('#kiritori_screen')">顔のみ出力する</p>
+        </li>
+    </ul>
 
-    <div id="lightbox-panel2">
-        <h1><img src="images/default/complete.png"></h1>
-        <div class="screenLeft">
-            <img class="screen_image">
+    <div class="modal prg-lightbox">
+        <div id="lightbox-panel2">
+            <h1><img src="images/default/complete.png"></h1>
+            <div class="screenLeft">
+                <img class="screen_image">
+            </div>
+            <div class="screenRight">
+                <a id="download" href="#" download="uniq_icon.png"></a>
+                <p align="center">
+                <a id="close-panel2" href="#" class="margintop"></a>
+                    </p>
+            </div>
+            <div class="clear"></div>
         </div>
-        <div class="screenRight">
-            <a id="download" href="#" download="uniq_icon.png"></a>
-             <p align="center">
-            <a id="close-panel2" href="#" class="margintop"></a>
-                  </p>
-        </div>
-        <div class="clear"></div>
+        <div id="BlackWindow2" class="prg-lightboxBg"></div>
     </div>
-	<div id="BlackWindow2"></div><!--黒背景-->
-</div>
-
-
-<!-- 一部切り取り-->
-<div class="onlyFace">
-<button class="btn" onclick="screenshot('#kiritori_screen')"><a href="#" id="show-panel2">顔のみ出力する</a></button><!--アイコン生成ボタン-->
-</div><!--box2-->
 </div>
 
 <!-- canvas上の画像をスクリーンショット＆ダウンロード-->
