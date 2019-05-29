@@ -7,16 +7,6 @@
 	border-bottom: 2px solid #ccc;
 }
 
-.partsList{
-	width:auto;
-	height:370px;
-	padding: 10px 0px 0px 10px;
-	overflow-y:scroll;
-	scrollbar-base-color: #FC0;
-　　scrollbar-arrow-color: #fff;
-}
-
-
 /*--------------------------------------
 
 髪の毛　- hair -

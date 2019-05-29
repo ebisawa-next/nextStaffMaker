@@ -1,0 +1,27 @@
+@charset "utf-8";
+.mod-colors {
+    border-bottom: 2px solid #ccc;
+    padding: 10px 25px;
+}
+.mod-colors .colors {
+    display: flex;
+    list-style: none;
+}
+.mod-colors .colors .color {
+    width: 40px;
+    height: 40px;
+}
+.mod-colors .colors .color:not(:first-child) {
+    margin-left: 10px;
+}
+.mod-colors .colors .color .change {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transition: .1s;
+}
+.mod-colors .colors .color .change:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}

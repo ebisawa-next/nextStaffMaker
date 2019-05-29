@@ -10,35 +10,26 @@
 
 /* タブ */
 .mod-partsSelect {
-	float: right;
-	width: 700px;
 }
 .mod-partsSelect .selectTabUl {
-	overflow:hidden;
-	height:auto;
-	list-style:none;
-	border-bottom:1px solid #ed6103;
-	height:50px;
-	margin-top:0px;
+	display: inline-flex;
+	list-style: none;
+	overflow: hidden;
 }
 .mod-partsSelect .selectTabLi {
 	background-color:#fff;
-	float:left;
-	display:inline;
-	margin-right:0px;
-	padding:10px 0px;
-	width:62px;
-	text-align:center;
-	border:4px solid #ed6103;
-	border-bottom:none;
+	padding: 10px;
+	border: 4px solid #ed6103;
+	border-bottom: 0;
 	border-radius:15px 15px 0 0;
-	height:40px;
-	margin-top:5px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transform: translateY(10px);
 }
-
-.mod-partsSelect .selectTabLi.active {
-    background: #ed6103;
-    margin-top:0px;
+.mod-partsSelect .selectTabLi:not(:first-child) {
+	margin-left: -4px;
 }
 
 .mod-partsSelect .selectTabLi img{
@@ -46,22 +37,25 @@
 	height:24px;
 }
 
+.mod-partsSelect .selectTabLi.active {
+	background: #ed6103;
+	transform: translateY(0);
+}
 .mod-partsSelect .selectTabLi:hover{
-	background-color: #ed6103;
-	margin-top:0px;
-	transition: 0.1s ;
+	background: #ed6103;
+	transform: translateY(0);
+	transition: .1s ;
 	cursor: pointer;
 }
 
 /* パーツリストが表示される場所 */
 .mod-partsSelect .partsListBox {
-    float: right;
-    width: 692px;
+	width: 100%;
     height: 480px;
     border: 4px solid #ed6103;
     background: #fff;
-    border-radius: 0 0 10px 10px;
-    margin-left: 30px;
+	border-radius: 0 0 10px 10px;
+	box-sizing: border-box;
 }
 
 .mod-partsSelect .partsListBox .area {

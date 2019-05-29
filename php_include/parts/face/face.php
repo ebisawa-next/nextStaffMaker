@@ -100,10 +100,5 @@ jQuery(function($){
 </script>
 
 
-<div class="colorList faceColor">
 <?php include "php_include/parts/face/face_color.php"; ?>
-</div>
-
-<div class="partsL1ist">
 <?php include "php_include/parts/face/face_list.php"; ?>
-</div>

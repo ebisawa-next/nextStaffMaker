@@ -106,38 +106,3 @@ input, select {
 }
 
 /*END RESET*/
-
-/*基本設定*/
-
-p{
-	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif
-	color:#333;
-	font-size:14px;
-	line-height:1.6em;
-}
-
-p .red{
-	font-color:#f00;
-	font-weight:700;
-}
-
-body{
-	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-	font-size:14px;
-	color:#666;
-	/*background-image:url(images/17.png);*/
-	background-color:#fafafa;
-	background-repeat:repeat;
-	background-position:fixed;
-
-}
-
-
-/*a:hover{
-	opacity:0.6;
-		-webkit-transition: 0.4s ;
-	transition: 0.4s ;
-}*/
-
-
-/*終わり*/

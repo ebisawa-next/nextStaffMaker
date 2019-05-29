@@ -8,6 +8,8 @@
 <link rel="stylesheet" type="text/css" href="css/mod/mod-partsSelect.css">
 <link rel="stylesheet" type="text/css" href="css/mod/mod-result.css">
 <link rel="stylesheet" type="text/css" href="css/mod/mod-canvas.css">
+<link rel="stylesheet" type="text/css" href="css/mod/mod-partsList.css">
+<link rel="stylesheet" type="text/css" href="css/mod/mod-colors.css">
 <script type="text/javascript" src="js/jquery-2.0.2.min.js"></script>
 <script type="text/javascript" src="js/jqueryupload.js"></script>
 <script type="text/javascript" src="js/jquery.balloon.js"></script>
@@ -15,8 +17,6 @@
 <script type="text/javascript" src="js/jscolor.js"></script>
 
 <title>HOME'S MAKER α版</title>
-
-
 
 <!--画像切り替えJS-->
 <script type="text/javascript">
@@ -82,18 +82,16 @@ $("#BlackWindow3, #lightbox-panel3").fadeOut(300);/*フォードアウトの速�
 <!--タブ表示非表示切り替え-->
 <script>
 $(document).ready(function() {
- 
-        $('.area:first').show();
+    $('.area:first').show();
     $('.selectTabUl li:first').addClass('active');
 
 
     $('.selectTabUl li').click(function() {
-
         $('.selectTabUl li').removeClass('active');
         $(this).addClass('active');
         $('.area').hide();
 
-    
+        
         $($(this).find('a').attr('href')).fadeIn();
         return false;
     });
@@ -123,7 +121,6 @@ $(document).ready(function() {
 
 <script>
 $(document).ready(function() {
- 
         $('.aceArea:first').show();
     $('.aceCategory button:first').addClass('active');
 
@@ -176,23 +173,19 @@ $(document).ready(function() {
 
 </head>
 <body>
-    <div class="sec-container">
-        <div class="sec-inner">  
-          <a href="index.html"><img src="images/default/logo.png" class="logo"></a>
-            <!--canvas部分-->
-            <div class="sec-leftBox">
-                <?php include "php_include/mod-canvas.php"; ?>
-                <?php include "php_include/mod-result.php"; ?>
-            </div>
 
-            <!--タブとパーツ一覧-->
-            <div class="sec-rightBox">
-                <?php include "php_include/mod-partsSelect.php"; ?>
-            </div>
-        </div><!--.sec-inner end-->
-</div><!--sec-container end-->
-
-
+<header class="mod-header">
+    <a href="index.html"><img src="images/default/logo.png" class="logo"></a>
+</header>
+<section class="sec-inner">
+    <section class="sec-preview">
+        <?php include "php_include/mod-canvas.php"; ?>
+        <?php include "php_include/mod-result.php"; ?>
+    </section>
+    <section class="sec-selector">
+        <?php include "php_include/mod-partsSelect.php"; ?>
+    </section>
+</section>
 
 </body>
 </html>
